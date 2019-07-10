@@ -4,7 +4,10 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "devserver": "live-server",
+    "css-compile": "node-sass sass -o css",
+    "css-watch": "npm run css-compile && npm run css-compile -- -rw",
+    "start": "npm run devserver & npm run css-watch"
   },
   "author": "Linda",
   "license": "ISC",
