@@ -15,6 +15,10 @@
 
   // Shadows
   --shadow-dark: 0 2rem 6rem rgab(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgab(0, 0, 0, 0.06);
+
+  // Borders
+  --line: var(--color-grey-light-2) solid 1px;
 }
 
 * {
